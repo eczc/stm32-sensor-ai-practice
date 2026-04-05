@@ -44,3 +44,20 @@
 - 模拟数据可以快速验证模型
 
 ### 模型结构
+
+
+
+Conv1D (32) → BN → Conv1D (32) → BN → MaxPool → Dropout
+→ Conv1D (64) → BN → Conv1D (64) → BN → MaxPool → Dropout
+→ Conv1D (128) → BN → GlobalAvgPool
+→ Dense (64) → Dropout → Dense (2)
+
+Copy
+总参数：56,354 (220 KB)
+
+### 下一步
+- [ ] 转换 TFLite 格式
+- [ ] 学习 X-CUBE-AI 部署流程
+- [ ] 拿到开发板后实测
+
+### 心情：10/10 🎉
